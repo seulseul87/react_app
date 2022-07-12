@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+}
+a {
+    color: #008000;
+}
+
+/* header, main nav */
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+header nav {
+    background: black;
+    margin: 0 auto;
+}
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+header nav a {
+    font-size: 14px;
+    display: block;
+    padding: 20px;
+    color: #fff;
+}
+header nav a:hover {
+    color: #ccc;
+}
+
+/* content */
+main h2 {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+main .content {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
