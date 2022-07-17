@@ -5,8 +5,9 @@ import "./assets/css/style.css";
 
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import Expenses from "./pages/Expenses";
-import Invoices from "./pages/Invoices";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 export default function App() {
     return (
@@ -15,8 +16,9 @@ export default function App() {
 
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route path="/expenses" component={Expenses} />
-                <Route path="/invoices" component={Invoices} />
+                <Route path="/about" component={About} />
+                <Route path="/projects" component={Projects} />
+                <Route path="/contact" component={Contact} />                
             </Switch>
         </BrowserRouter>
     );
