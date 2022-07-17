@@ -9,6 +9,7 @@ body {
     padding-top:80px;
     font-size: 16px;
     line-height: 24px;
+    background-color: #000;
 }
 a {
     color: #5a40c9;
@@ -20,7 +21,7 @@ header {
     top:0; 
     left:0; 
     width:100%; 
-    background-color: #fff;    
+    background-color: #000;    
 }
 header a {
     text-decoration: none;  
@@ -44,7 +45,6 @@ header .logo {
     font-size: 20px;
     font-weight: bold; 
     letter-spacing: -0.8px;
-    color: #000;    
 }
 header .menu-list {    
     display: block;
@@ -53,7 +53,7 @@ header .menu-list {
 }
 header .active {
     font-weight: bold;
-    color: #000;
+    color: #fff;
 }
 
 
@@ -65,7 +65,7 @@ main h2 {
     margin-top: 20px;
     font-size: 30px;
     text-align: center;    
-    color: #000;
+    color: #5a40c9;
 }
 main .content {
     margin: 0 auto;
@@ -75,5 +75,12 @@ main .content {
     border-radius: 20px;
     padding: 50px;
     font-size: 16px;
-    color: #444;
+    color: #fff;
 }
+
+
+/* Media Query */
+/* Medium devices */
+/* @media (min-width: 768px) {
+    
+} */

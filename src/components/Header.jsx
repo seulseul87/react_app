@@ -5,7 +5,11 @@ export default function App() {
     return (
         <header>
             <nav>   
-                <h1><NavLink to="/" className="logo">SEULGI</NavLink></h1>                                                        
+                <h1>
+                    <NavLink to="/" className="logo">
+                        SEULGI
+                    </NavLink>
+                </h1>                                                
                 <ul>   
                     <li>
                         <NavLink to="/" className="menu-list" activeClassName="active">
