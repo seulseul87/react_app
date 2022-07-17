@@ -1,14 +1,16 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 
 export default function App() {
     return (
         <header>
-            <nav>                           
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li> 
-                    <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+            <nav>   
+                <h1><NavLink to="/"activeStyle><p className="logo">SEULGI</p></NavLink></h1>                                                        
+                <ul>   
+                    <li><NavLink to="/" activeStyle>Home</NavLink></li>
+                    <li><NavLink to="/about" activeStyle>About</NavLink></li> 
+                    <li><NavLink to="/projects" activeStyle>Projects</NavLink></li>
+                    <li><NavLink to="/contact" activeStyle>Contact</NavLink></li>
                 </ul>
             </nav>            
         </header>
