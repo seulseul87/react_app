@@ -14,7 +14,7 @@ export default function App() {
         <BrowserRouter>
             <Header />
             
-            <Switch>                
+            <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/projects" component={Projects} />

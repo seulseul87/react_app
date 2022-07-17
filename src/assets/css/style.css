@@ -7,18 +7,23 @@
 body {
     position:relative; 
     padding-top:80px;
+    font-size: 16px;
+    line-height: 24px;
 }
 a {
     color: #5a40c9;
 }
 
-/* header, main nav */
+/* header & main nav */
 header {
     position:fixed; 
     top:0; 
     left:0; 
     width:100%; 
     background-color: #fff;    
+}
+header a {
+    text-decoration: none;  
 }
 header nav {    
     height:80px; 
@@ -27,45 +32,48 @@ header nav {
     justify-content: space-between;  
     justify-items: center;
     padding: 10px 30px;
-    border-bottom: solid 1px #eee;
-}
-header .logo {    
-    font-size: 20px;
-    font-weight: bold; 
-    letter-spacing: -0.5px;
-    color: #5a40c9;       
 }
 header nav ul {        
     display: flex;
     justify-content: flex-end;
     list-style: none;
 }
-header nav a {      
-    text-decoration: none;  
-    font-size: 16px;
+header .logo {   
     display: block;
-    padding: 20px;
+    padding: 20px; 
+    font-size: 20px;
+    font-weight: bold; 
+    letter-spacing: -0.8px;
     color: #000;    
 }
-header nav a:hover {
-    color: #5a40c9;
+header .menu-list {    
+    display: block;
+    padding: 20px;
+    color: #aaa;   
 }
+header .active {
+    font-weight: bold;
+    color: #000;
+}
+
 
 /* content */
 main h2 {
-    text-align: center;
+    width: 90%;    
+    padding: 35px;
     margin: 0 auto;
     margin-top: 20px;
-    width: 90%;
+    font-size: 30px;
+    text-align: center;    
     color: #000;
-    padding: 35px;
 }
 main .content {
     margin: 0 auto;
     margin-top: 10px;
     width: 80%;
     border: 1px solid #5a40c9;
-    border-radius: 5px;
-    padding: 25px;
-    font-size: 14px;
+    border-radius: 20px;
+    padding: 50px;
+    font-size: 16px;
+    color: #444;
 }
