@@ -6,54 +6,36 @@
 }
 body {
     position:relative; 
-    padding-top:80px;
     font-size: 16px;
-    line-height: 24px;
     background-color: #000;
+    line-height: 1.75;
 }
 a {
     color: #5a40c9;
 }
+h3 {
+    font-weight: medium;
+    color: #5a40c9;
+    padding-bottom: 30px;
+}
 
 /* header & main nav */
-header {
-    position:fixed; 
-    top:0; 
-    left:0; 
-    width:100%; 
-    background-color: #000;    
-}
-header a {
-    text-decoration: none;  
-}
-header nav {    
-    height:80px; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;  
-    justify-items: center;
-    padding: 10px 30px;
-}
-header nav ul {        
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
-header .logo {   
+.logo {   
     display: block;
     padding: 20px; 
     font-size: 20px;
     font-weight: bold; 
     letter-spacing: -0.8px;
-}
-header .menu-list {    
-    display: block;
-    padding: 20px;
-    color: #aaa;   
-}
-header .active {
-    font-weight: bold;
     color: #fff;
+}
+.icon {
+    background-color: #fff;
+}
+.mobile-nav .menu-list {
+    display: none;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
 }
 
 
@@ -70,17 +52,59 @@ main h2 {
 main .content {
     margin: 0 auto;
     margin-top: 10px;
+    margin-bottom: 100px;
     width: 80%;
     border: 1px solid #5a40c9;
     border-radius: 20px;
     padding: 50px;
-    font-size: 16px;
-    color: #fff;
+    color: #bbb;
 }
+.main-text {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -0.8px;
+}
+.with--accent {
+    font-style: italic;
+    color: #5a40c9;
+    font-weight: bold;
+  }
 
 
 /* Media Query */
 /* Medium devices */
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
+    nav {
+        position:fixed; 
+        top:0; 
+        left:0; 
+        width:100%;  
+    }
+    nav a {
+        text-decoration: none;  
+    }
+    nav {    
+        height:80px; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;  
+        justify-items: center;
+        padding: 10px 30px;
+    }
+    nav ul {        
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+    .desktop-nav .menu-list {    
+        display: block;
+        padding: 20px;
+        color: #aaa;   
+    }
+    .desktop-nav .active {
+        font-weight: bold;
+        color: #fff;
+    }
     
-} */
+} 
